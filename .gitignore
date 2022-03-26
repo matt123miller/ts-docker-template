@@ -1,3 +1,8 @@
+# built files
+build/
+
+###### IGNORES FROM TEMPLATE ###### 
+
 # Logs
 logs
 *.log
