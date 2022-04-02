@@ -1,0 +1,17 @@
+version: "3.7"
+ 
+services:
+  ts-docker-template:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: example-web-server
+    volumes:
+      - ./src:/app/src
+    expose:
+      - '8080'
+    ports:
+      - "8080:8080"
+      # - "8181:8181"
+      - "9229:9229"
+    command: npm run dev
