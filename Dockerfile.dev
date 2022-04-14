@@ -4,4 +4,6 @@ WORKDIR /app
 
 ADD package*.json ./
 
+# ENV NODE_ENV=development
+
 RUN npm i
